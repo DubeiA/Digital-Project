@@ -19,27 +19,20 @@ $footer-bgr: #2c2c2c;
 $item: 4;
 @font-face {
   font-family: 'TT Hoves', sans-serif;
-  src: url(../../../fonts/TT-Hoves/TT-font/Bold.ttf) format('ttf');
+  src: url(../fonts/Bold.ttf) format('ttf');
 
   font-weight: 700;
 }
 @font-face {
   font-family: 'TT Hoves', sans-serif;
-  src: url(../../../fonts/TT-Hoves/TT-font/Regular.ttf) format('ttf');
+  src: url(../fonts/Regular.ttf) format('ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'TT Hoves', sans-serif;
-  src: url(../../../fonts/TT-Hoves/TT-font/Light.ttf) format('ttf');
+  src: url(../fonts/Light.ttf) format('ttf');
   font-weight: 300;
-}
-
-@font-face {
-  font-family: 'SF Pro Display', sans-serif;
-  src: url(../../../fonts/Sf-Pro/SF-Pro-Display-Black.otf) format('otf');
-
-  font-weight: 900;
 }
 
 body {
