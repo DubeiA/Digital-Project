@@ -1,0 +1,115 @@
+.main-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  color: $main-secondary-color;
+
+  font-size: 64px;
+
+  font-weight: 300;
+  line-height: 64px; /* 100% */
+
+  margin-bottom: 105px;
+  margin-right: 160px;
+}
+
+.title-home {
+  color: $main-color;
+  font-size: 64px;
+
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.box-arrow {
+  display: inline-flex;
+  margin-bottom: 90px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 53px;
+  border: 1px solid $border-arrow;
+  background: $bgr-arrow;
+  cursor: pointer;
+
+  transition: scale $animation-cubic;
+
+  &:not(:last-child) {
+    margin-right: 23px;
+  }
+
+  &:hover,
+  &:focus {
+    scale: 1.2;
+  }
+}
+
+.box-page {
+  display: flex;
+}
+
+.page {
+  color: $main-secondary-color;
+
+  font-size: 24px;
+
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.box-position-btn {
+  position: relative;
+}
+
+.btn-watch {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  background-color: $main-backg-color;
+  border: none;
+  padding: 30px 50px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+
+  transition: background-color $animation-cubic, color $animation-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $rgba-project;
+    color: $main-backg-color;
+  }
+}
+
+.position-icon {
+  margin-left: 10px;
+}
+
+.icon-watch {
+  fill: $main-color;
+  transition: fill $animation-cubic;
+
+  .btn-watch:hover &,
+  .btn-watch:focus & {
+    fill: $main-backg-color;
+  }
+}

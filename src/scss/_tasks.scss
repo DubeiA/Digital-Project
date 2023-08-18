@@ -1,0 +1,52 @@
+.title-tasks {
+  color: $main-secondary-color;
+
+  font-size: 64px;
+
+  font-weight: 300;
+  line-height: 64px;
+}
+
+.list-number {
+  list-style: none;
+  padding: 0;
+  counter-reset: item;
+
+  height: 136px;
+}
+
+.list-number li {
+  counter-increment: item;
+}
+
+.list-number li::before {
+  content: counter(item);
+  color: #f2f2f2;
+  // font-family: 'SF Pro Display';
+  font-size: 194px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-right: 30px;
+}
+
+.item-task {
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 22px;
+
+  line-height: 36px;
+  width: 420px;
+}
+
+.item-second-task {
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 22px;
+
+  line-height: 36px;
+  width: 600px;
+  margin-left: 145px;
+}

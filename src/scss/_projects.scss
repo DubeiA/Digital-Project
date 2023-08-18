@@ -1,0 +1,244 @@
+.title-project {
+  color: $main-secondary-color;
+
+  font-size: 64px;
+
+  font-weight: 300;
+  line-height: 64px;
+  margin-bottom: 60px;
+}
+
+.project-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+
+  transition: box-shadow $animation-cubic;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+  //   z-index: -1;
+}
+
+.overlay__text {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: 58px;
+
+  font-weight: 700;
+  line-height: 64px;
+  color: $main-backg-color;
+  text-transform: uppercase;
+  opacity: 0;
+
+  background-color: $rgba-project;
+
+  padding: 0 24px;
+  transform: translateY(100%);
+  transition: background-color $animation-cubic, opacity $animation-cubic,
+    transform $animation-cubic;
+
+  .project-link:hover &,
+  .project-link:focus & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.overlay__details {
+  position: absolute;
+  top: 30%;
+  left: -33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: $main-backg-color;
+  opacity: 0;
+  opacity: 0;
+
+  transform: translateY(100%);
+  transition: background-color $animation-cubic, opacity $animation-cubic,
+    transform $animation-cubic;
+
+  .project-link:hover &,
+  .project-link:focus & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.overlay__details2 {
+  position: absolute;
+  top: 17%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: $main-backg-color;
+  opacity: 0;
+  opacity: 0;
+
+  transform: translateY(100%);
+  transition: background-color $animation-cubic, opacity $animation-cubic,
+    transform $animation-cubic;
+
+  .project-link:hover &,
+  .project-link:focus & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.overlay__details3 {
+  position: absolute;
+  top: 17%;
+  left: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: $main-backg-color;
+  opacity: 0;
+  opacity: 0;
+
+  transform: translateY(100%);
+  transition: background-color $animation-cubic, opacity $animation-cubic,
+    transform $animation-cubic;
+
+  .project-link:hover &,
+  .project-link:focus & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.overlay__details4 {
+  position: absolute;
+  top: 28%;
+  left: -29%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: $main-backg-color;
+  opacity: 0;
+
+  transform: translateY(100%);
+  transition: background-color $animation-cubic, opacity $animation-cubic,
+    transform $animation-cubic;
+
+  .project-link:hover &,
+  .project-link:focus & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.overlay__details5 {
+  position: absolute;
+  top: 28%;
+  left: -26%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: $main-backg-color;
+  opacity: 0;
+
+  transform: translateY(100%);
+  transition: background-color $animation-cubic, opacity $animation-cubic,
+    transform $animation-cubic;
+
+  .project-link:hover &,
+  .project-link:focus & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon-white {
+  fill: $main-backg-color;
+}
+
+.btn-show-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  background-color: $main-color;
+  color: $main-backg-color;
+  border: none;
+  padding: 30px 50px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+
+  margin-left: 74.75%;
+  margin-top: 30px;
+
+  transition: background-color $animation-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $rgba-project;
+  }
+}

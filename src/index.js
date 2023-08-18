@@ -1,2 +1,2 @@
 import './scss/common.scss';
-console.log('sript is run 2');
+import './js/importImage.js';

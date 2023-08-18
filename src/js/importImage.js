@@ -1,0 +1,13 @@
+import '../image/Rectangle.jpg';
+import '../image/image 12.png';
+import '../image/image 15.png';
+import '../image/image 16.png';
+import '../image/image 17.png';
+import '../image/image 18.png';
+import '../image/Rectangle 10.png';
+import '../image/Rectangle 12.png';
+import '../image/Rectangle 8.png';
+import '../image/Rectangle 9.png';
+import '../image/Group.svg';
+import '../image/Group 1.svg';
+import '../image/symbol-defs.svg';

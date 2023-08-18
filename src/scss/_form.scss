@@ -1,0 +1,139 @@
+.form-box {
+  display: flex;
+  gap: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__input {
+  margin-top: 9px;
+
+  width: 391px;
+  height: 46px;
+
+  padding-left: 21px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border-radius: 4px;
+
+  border-color: transparent;
+  background-color: $bgr-imput;
+  outline: transparent;
+
+  &::placeholder {
+    color: $input-color;
+
+    letter-spacing: 0.56px;
+  }
+}
+
+/*------------------------textarea---------------------- */
+
+.form__textarea {
+  margin-top: 10px;
+
+  resize: none;
+
+  width: 391px;
+  height: 141px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding: 12px 21px;
+
+  outline: transparent;
+
+  border-color: transparent;
+  background-color: $bgr-imput;
+
+  &::placeholder {
+    color: $input-color;
+
+    letter-spacing: 0.56px;
+  }
+}
+
+.confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 22px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.confirm__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.confirm__agree {
+  display: block;
+
+  min-width: 16px;
+  min-height: 15px;
+  border: 1px solid $main-color;
+
+  border-radius: 3px;
+  margin-right: 8px;
+
+  transition-property: background-color, background-image, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.confirm__checkbox:checked + .confirm__agree {
+  background-image: url(../image/check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.confirm__text {
+  color: $main-color;
+  width: 351px;
+  letter-spacing: 0.42px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  background-color: $main-color;
+  color: $main-backg-color;
+  border: none;
+  padding: 30px 50px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+
+  transition: background-color $animation-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $rgba-project;
+  }
+}

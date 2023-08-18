@@ -1,0 +1,187 @@
+.footer__group {
+  display: flex;
+
+  padding-top: 58px;
+  height: 347px;
+  background-color: $footer-bgr;
+}
+
+.group {
+  text-align: center;
+  margin-right: 100px;
+}
+
+.footer__link {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 26px;
+  line-height: 1.19px;
+
+  letter-spacing: 0.03em;
+}
+
+.footer--logo-white {
+  color: $main-backg-color;
+}
+
+// ========================
+
+.subscription {
+  margin-right: 157px;
+}
+
+.subscription__title {
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $main-backg-color;
+}
+
+.item-info {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.link-info {
+  color: $main-backg-color;
+
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+
+  transition: color $animation-cubic;
+
+  &:hover,
+  &:focus {
+    color: $input-color;
+  }
+}
+
+// =======================
+
+.address {
+  width: 269px;
+}
+.address__item {
+  display: flex;
+}
+
+.address__item + .address__item {
+  margin-top: 38px;
+}
+
+.footer-icon {
+  margin-right: 19px;
+}
+
+.address__location {
+  color: $main-backg-color;
+  font-weight: 400;
+  line-height: 1.71;
+
+  transition: color $animation-cubic;
+
+  &:hover,
+  &:focus {
+    color: $input-color;
+  }
+}
+
+.address__contact {
+  font-weight: 400;
+  line-height: 1.71;
+  color: $main-backg-color;
+
+  transition: color $animation-cubic;
+
+  &:hover,
+  &:focus {
+    color: $input-color;
+  }
+}
+
+// ======================================
+
+.join {
+  width: 200px;
+  margin-left: 70px;
+}
+
+.join__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $main-backg-color;
+}
+
+.join__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.join__link {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color $animation-cubic;
+}
+
+.join__icon {
+  width: 20px;
+  height: 20px;
+  color: $main-backg-color;
+}
+
+.icon-join {
+  fill: $main-backg-color;
+
+  transition: fill $animation-cubic;
+
+  &:hover,
+  &:focus {
+    fill: $input-color;
+  }
+}
+
+.join__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+//=================================
+
+.line {
+  &:before {
+    content: '';
+
+    display: block;
+    margin: 0 auto;
+    width: 1440px;
+    height: 1px;
+
+    background-color: #414141;
+  }
+}
+
+.law {
+  padding: 35px 0;
+  text-align: center;
+  margin: 0 auto;
+  width: 1440px;
+  color: rgba(200, 200, 200, 0.5);
+  font-family: Open Sans;
+  font-size: 12px;
+
+  line-height: 22px;
+  background-color: $footer-bgr;
+}
