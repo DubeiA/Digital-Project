@@ -21,8 +21,8 @@
 
 .list-number li::before {
   content: counter(item);
-  color: #f2f2f2;
-  // font-family: 'SF Pro Display';
+  color: $border-arrow;
+
   font-size: 194px;
   font-style: normal;
   font-weight: 900;
